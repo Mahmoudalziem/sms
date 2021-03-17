@@ -38,25 +38,3 @@ Sms::send("this message", function($sms) {
 Sms::send("this message")->to(['Number 1', 'Number 2'])->dispatch();
 
 ```
-
-## :microscope: Testing
-
-``` bash
-composer test
-```
-
-## :date: Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## :heart: Contributing
-
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
-
-## :lock: Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## :policeman: License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

@@ -21,6 +21,8 @@ $ php artisan sms:publish
 
 ## :fire: Usage
 
+```php
+
 In your env file just use it like this. 
 
 GATEWAY_SA_URL=
@@ -28,6 +30,7 @@ GATEWAY_SA_USER=
 GATEWAY_SA_PASSWORD=
 GATEWAY_SA_SENDER_ID=
 
+...
 
 ```php
 # On the top of the file.

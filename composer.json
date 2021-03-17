@@ -1,0 +1,58 @@
+{
+    "name": "azima/sms",
+    "description": "Laravel SMS Gateway Integration Package",
+    "keywords": [
+        "azima",
+        "sms",
+        "laravel sms gateway",
+        "laravel gateway Saudi Arabia"
+    ],
+    "homepage": "https://github.com/Mahmoudalziem/sms",
+    "license": "MIT",
+    "authors": [{
+        "name": "Mahmoud Abd Alziem",
+        "email": "mbdalzym376@gmail.com",
+        "homepage": "https://github.com/Mahmoudalziem",
+        "role": "devops"
+    }],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/http": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Azima\\Sms\\": "src"
+        },
+        "files": [
+            "src/Helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Azima\\Sms\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Azima\\Sms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Azima\\Sms\\Facades\\Sms"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -33,7 +33,7 @@ class gatewaySa extends Driver
     {
         return [
             'user' => data_get($this->settings, 'user'),
-            'passwor' => data_get($this->settings, 'password'),
+            'password' => data_get($this->settings, 'password'),
             'msisdn' => $recipient,
             'sid' => data_get($this->settings, 'sid'),
             'msg' => $this->body,

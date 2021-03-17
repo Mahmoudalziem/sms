@@ -1,8 +1,3 @@
-# :gift: Laravel SMS Gateway
-
-![SMS Cover](resources/sms.svg)
-
-
 ## :package: Install
 
 Via Composer
@@ -30,9 +25,6 @@ GATEWAY_SA_USER=
 GATEWAY_SA_PASSWORD=
 GATEWAY_SA_SENDER_ID=
 
-...
-
-```php
 # On the top of the file.
 use Azima\Sms\Facades\Sms;
 
